@@ -1,0 +1,12 @@
+{
+    "name": "your-app-name",
+    "version": "1.0.0",
+    "description": "Your app description",
+    "scripts": {
+      "start": "node script.js"
+    },
+    "engines": {
+      "node": "20.5.0"  // Adjust the Node.js version as needed
+    }
+  }
+  
