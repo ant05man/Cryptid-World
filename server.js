@@ -4,6 +4,7 @@ const port = process.env.PORT || 3000;
 
 // Your other routes and middleware
 
+app.use(express.static('public'));
 // Handle favicon request
 app.get('/favicon.ico', (req, res) => {
   // Respond with a placeholder favicon or an empty response
