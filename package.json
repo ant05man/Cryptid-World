@@ -1,17 +1,16 @@
 {
-    "name": "your-app-name",
-    "version": "1.0.0",
-    "description": "Your app description",
-    "main": "server.js",
-    "license": "MIT",
-    "dependencies": {
-      "express": "^4.17.1"
-    },
-    "scripts": {
-      "start": "node script.js"
-    },
-    "engines": {
-      "node": "14.x"
-    }
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "Your app description",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "14.x"
   }
-  
+}
