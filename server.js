@@ -1,15 +1,16 @@
 const express = require('express');
-const path = require('path');
-
-const PORT = process.env.PORT || 3001;
-
 const app = express();
+const port = process.env.PORT || 3000;
 
-app.use(express.static('public'));
+// Your other routes and middleware
 
-// GET Route for homepage
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
-);
+// Handle favicon request
+app.get('/favicon.ico', (req, res) => {
+  // Respond with a placeholder favicon or an empty response
+  res.status(204).end();
+});
 
-app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
