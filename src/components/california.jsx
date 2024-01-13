@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>California Cryptids</title>
-</head>
-<body>
+import React from 'react';
+import '../styles/california.css';
+
+function California() {
+    return (
+<div className="california" id="california">
+<p>
     This is the california page
-</body>
-</html>
+</p>
+</div>
+    )
+}
+
+export default California;
