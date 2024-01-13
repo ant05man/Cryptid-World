@@ -1,3 +1,9 @@
 h1 {
     color:rgb(8, 168, 8);
 }
+
+body {
+    color:black;
+    background: rgb(223, 212, 196);
+    font-family: 'Roboto';
+}
