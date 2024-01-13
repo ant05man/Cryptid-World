@@ -6,6 +6,6 @@
     <title>California Cryptids</title>
 </head>
 <body>
-    
+    This is the california page
 </body>
 </html>
