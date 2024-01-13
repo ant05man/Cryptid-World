@@ -6,8 +6,8 @@
     <title>Cryptid World</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,12 +16,34 @@
     </header>
     <main>
         <label for="stateSelect">Select a State:</label>
-        <select id="stateSelect"></select>
+        <select id="stateSelect" onchange="navigateToStatePage()">
+            <option value="" selected disabled>Select a State</option>
+            <option value="california">California</option>
+            <option value="new-york">New York</option>
+            <!-- Add more states as needed -->
+        </select>
         <button onclick="searchCryptid()">Search</button>
         <div id="cryptidResult"></div>
     </main>
     <footer>
         <p>&copy; 2024 Cryptid World</p>
     </footer>
+
+    <script>
+        function navigateToStatePage() {
+            const stateSelect = document.getElementById('stateSelect');
+            const selectedState = stateSelect.value;
+
+            if (selectedState) {
+                // Assuming you have pages like "california.html", "new-york.html"
+                const pageURL = `${selectedState}.html`;
+                window.location.href = pageURL;
+            }
+        }
+
+        function searchCryptid() {
+            // Implement your cryptid search logic here
+        }
+    </script>
 </body>
 </html>
