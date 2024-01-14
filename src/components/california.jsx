@@ -5,8 +5,7 @@ function California() {
     return (
 <div className="california" id="california">
 <p>
-    This is the california page
-</p>
+California Cryptids</p>
 </div>
     )
 }
