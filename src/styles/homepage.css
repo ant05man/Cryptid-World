@@ -1,0 +1,12 @@
+body {
+    background: black;
+    color:forestgreen;
+    font-family:'Roboto';
+}
+
+h1 {
+    color:black;
+    text-align: center;
+    text-shadow: 0 0 4px rgb(34, 241, 34), 0 0 4px white, 0 0 4px white, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    border: 6px solid forestgreen;
+}
