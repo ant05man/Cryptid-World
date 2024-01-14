@@ -1,7 +1,7 @@
 body {
     background: black;
     color:forestgreen;
-    font-family:'Roboto';
+    font-family:cursive;
 }
 
 h1 {
@@ -13,4 +13,5 @@ h1 {
 
 select {
     font-size: 16px;
+    font-family:cursive
 }
