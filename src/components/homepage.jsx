@@ -1,6 +1,8 @@
 // Homepage.jsx
 import '../styles/homepage.css';
 import React, { useState } from 'react';
+import { Link, Route, Routes, useNavigate } from 'react-router-dom';
+import California from './california';
 
 function Homepage() {
     // Sample array of states
@@ -9,9 +11,18 @@ function Homepage() {
     // State to track the selected state
     const [selectedState, setSelectedState] = useState('');
 
+    // React Router's navigate function
+    const navigate = useNavigate();
+
     // Function to handle state selection
     const handleStateChange = (event) => {
-        setSelectedState(event.target.value);
+        const selected = event.target.value;
+        setSelectedState(selected);
+
+        // Use navigate to programmatically navigate to the selected state's page
+        if (selected) {
+            navigate(`/states/${selected.toLowerCase()}`);
+        }
     };
 
     return (
@@ -30,6 +41,12 @@ function Homepage() {
                         <option key={index} value={state}>{state}</option>
                     ))}
                 </select>
+
+                {/* Routes for individual state pages */}
+                <Routes>
+                    <Route path="/states/california" element={<California />} />
+                    {/* Add routes for other states as needed */}
+                </Routes>
 
                 {/* Display a message based on the selected state */}
                 {selectedState && (
