@@ -3,10 +3,10 @@ import '../styles/homepage.css';
 import React, { useState } from 'react';
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import California from './california';
-
+import NewJersey from './new-jersey';
 function Homepage() {
     // Sample array of states
-    const states = ['Arizona','California', 'New Jersey', 'Texas', 'Florida', 'etc.'];
+    const states = ['Arizona','California', 'New-Jersey', 'Texas', 'Florida', 'etc.'];
 
     // State to track the selected state
     const [selectedState, setSelectedState] = useState('');
@@ -28,10 +28,7 @@ function Homepage() {
     return (
         <div className="homepage">
             <header>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
-                <div className="header-container">
+                <div>
                 <h1>Welcome to Cryptid Land</h1>
                 <img src="/green-evil-eyes.jpg" alt="Evil Eyes image" width="200px"></img>
                 </div>
@@ -52,6 +49,7 @@ function Homepage() {
                 <Routes>
                     <Route path="/states/california" element={<California />} />
                     {/* Add routes for other states as needed */}
+                    <Route path="/states/new-jersey" element={<NewJersey />} />
                 </Routes>
 
                 {/* Display a message based on the selected state */}

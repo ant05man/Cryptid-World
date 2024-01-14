@@ -4,7 +4,7 @@ import '../styles/california.css';
 function California() {
     return (
 <div className="california" id="california">
-<p>
+<p className="californiaHeader">
 California Cryptids</p>
 </div>
     )

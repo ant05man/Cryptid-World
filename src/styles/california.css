@@ -1,5 +1,8 @@
-body {
+p {
     font-family:cursive;
     text-align:center;
-    text-decoration:overline;
+}
+
+.californiaHeader {
+    text-decoration: overline;
 }
