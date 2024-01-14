@@ -5,9 +5,9 @@ body {
 }
 
 h1 {
-    color:black;
+    color:rgb(83, 79, 7);
     text-align: center;
-    text-shadow: 0 0 4px rgb(34, 241, 34), 0 0 4px white, 0 0 4px white, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    text-shadow: 0 0 4px rgb(34, 241, 34), 0 0 4px white, 0 0 4px white, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px;
     border: 6px solid forestgreen;
 }
 

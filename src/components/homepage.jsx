@@ -6,7 +6,7 @@ import California from './california';
 
 function Homepage() {
     // Sample array of states
-    const states = ['California', 'New Jersey', 'Texas', 'Florida', 'etc.'];
+    const states = ['Arizona','California', 'New Jersey', 'Texas', 'Florida', 'etc.'];
 
     // State to track the selected state
     const [selectedState, setSelectedState] = useState('');
