@@ -35,7 +35,7 @@ function Homepage() {
             </header>
             <main>
                 <h2>Select a State:</h2>
-                <select value={selectedState} onChange={handleStateChange}>
+                <select value={selectedState} onChange={handleStateChange} style={{ width: '200px', height:'50px' }}>
                     <option value="" disabled>Select a State</option>
                     {states.map((state, index) => (
                         <option key={index} value={state}>{state}</option>
