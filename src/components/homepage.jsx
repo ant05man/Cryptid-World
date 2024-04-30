@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import California from './california';
 import NewJersey from './new-jersey';
+import axios from 'axios'; // Import axios for making HTTP requests
 function Homepage() {
     // Sample array of states
     const states = ['Arizona','California', 'New-Jersey', 'Texas', 'Florida', 'etc.'];
@@ -23,8 +24,11 @@ function Homepage() {
         if (selected) {
             axios.get(`/api/states/${selected.toLowerCase()}`)
             .then(response => {
+                console.log('Response', response);
+
                 //Handle response data update state with fetched data
-                console.log(response.data);
+                const path = `/states/${selected.toLowerCase()}`
+                navigate(path);
             })
             .catch(error => {
                 console.error('Error fetching state data:', error);
