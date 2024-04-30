@@ -29,7 +29,7 @@ function Homepage() {
         <div className="homepage">
             <header>
                 <div>
-                <h1>Welcome to Cryptid Land</h1>
+                <h1>Welcome to Cryptid World</h1>
                 <img src="/green-evil-eyes.jpg" alt="Evil Eyes image" width="200px"></img>
                 </div>
             </header>
