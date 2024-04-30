@@ -19,9 +19,16 @@ function Homepage() {
         const selected = event.target.value;
         setSelectedState(selected);
 
-        // Use navigate to programmatically navigate to the selected state's page
+        // Fetch state data from the backend when a state is selected
         if (selected) {
-            navigate(`/states/${selected.toLowerCase()}`);
+            axios.get(`/api/states/${selected.toLowerCase()}`)
+            .then(response => {
+                //Handle response data update state with fetched data
+                console.log(response.data);
+            })
+            .catch(error => {
+                console.error('Error fetching state data:', error);
+            });
         }
     };
 
