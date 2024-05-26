@@ -5,9 +5,10 @@ import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import California from './california';
 import NewJersey from './new-jersey';
 import axios from 'axios'; // Import axios for making HTTP requests
+
 function Homepage() {
     // Sample array of states
-    const states = ['Arizona','California', 'New-Jersey', 'Texas', 'Florida', 'etc.'];
+    const states = ['California', 'New-Jersey', 'Arizona', 'Texas', 'Florida', 'etc.'];
 
     // State to track the selected state
     const [selectedState, setSelectedState] = useState('');
@@ -23,16 +24,15 @@ function Homepage() {
         // Fetch state data from the backend when a state is selected
         if (selected) {
             axios.get(`/api/states/${selected.toLowerCase()}`)
-            .then(response => {
-                console.log('Response', response);
-
-                //Handle response data update state with fetched data
-                const path = `/states/${selected.toLowerCase()}`
-                navigate(path);
-            })
-            .catch(error => {
-                console.error('Error fetching state data:', error);
-            });
+                .then(response => {
+                    console.log('Response', response);
+                    // Handle response data update state with fetched data
+                    const path = `/states/${selected.toLowerCase()}`;
+                    navigate(path);
+                })
+                .catch(error => {
+                    console.error('Error fetching state data:', error);
+                });
         }
     };
 
@@ -40,8 +40,8 @@ function Homepage() {
         <div className="homepage">
             <header>
                 <div>
-                <h1>Welcome to Cryptid World</h1>
-                <img src="/green-evil-eyes.jpg" alt="Evil Eyes image" width="200px"></img>
+                    <h1>Welcome to Cryptid World</h1>
+                    <img src="/green-evil-eyes.jpg" alt="Evil Eyes image" width="200px"></img>
                 </div>
             </header>
             <p>
@@ -49,29 +49,29 @@ function Homepage() {
             </p>
             <main>
                 <h2>Select a State:</h2>
-                <select value={selectedState} onChange={handleStateChange} style={{ width: '200px', height:'50px' }}>
+                <select value={selectedState} onChange={handleStateChange} style={{ width: '200px', height: '50px' }}>
                     <option value="" disabled>Select a State</option>
                     {states.map((state, index) => (
                         <option key={index} value={state}>{state}</option>
                     ))}
                 </select>
 
-                {/* Routes for individual state pages */}
-                <Routes>
-                    <Route path="/states/california" element={<California />} />
-                    {/* Add routes for other states as needed */}
-                    <Route path="/states/new-jersey" element={<NewJersey />} />
-                </Routes>
-
                 {/* Display a message based on the selected state */}
                 {selectedState && (
                     <div>
                         <h3>{selectedState} Page</h3>
                         {/* Add content specific to the selected state */}
-                        <p>Content for {selectedState}</p>
+                        <p>Content  {selectedState}</p>
                     </div>
                 )}
             </main>
+            
+            {/* Routes for individual state pages */}
+            <Routes>
+                <Route path="/states/california" element={<California />} />
+                <Route path="/states/new-jersey" element={<NewJersey />} />
+                {/* Add routes for other states as needed */}
+            </Routes>
         </div>
     );
 }
