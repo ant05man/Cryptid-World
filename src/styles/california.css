@@ -26,3 +26,9 @@ color:black;
 .navbar a:hover {
     color:forestgreen;
 }
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}

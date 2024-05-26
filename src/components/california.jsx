@@ -1,6 +1,7 @@
 // California.jsx
 // the style of this page is from hompage.jsx because that takes priority
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/california.css';
 
 function California() {
@@ -8,10 +9,7 @@ function California() {
         <div>
             <h1>Cryptids of California</h1>
             <div class="navbar">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+                <Link className="nav-link" to="/">Home</Link>
 </div>
             <p></p>
         </div>
