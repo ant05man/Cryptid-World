@@ -1,7 +1,7 @@
 import React from 'react';
 import Homepage from "./components/homepage";
-import California from "./components/California";
-import NewJersey from './components/NewJersey';
+import California from "./components/california";
+import NewJersey from './components/new-jersey';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './app.css'; // CSS file
