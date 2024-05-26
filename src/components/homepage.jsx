@@ -23,7 +23,7 @@ function Homepage() {
 
         // Fetch state data from the backend when a state is selected
         if (selected) {
-            axios.get(`/api/states/${selected.toLowerCase()}`)
+            axios.get(`${process.env.REACT_APP_API_URL}/api/states/${selected.toLowerCase()}`)
                 .then(response => {
                     console.log('Response', response);
                     // Handle response data update state with fetched data
