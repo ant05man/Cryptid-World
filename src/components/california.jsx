@@ -1,13 +1,13 @@
+// California.jsx
 import React from 'react';
-import '../styles/california.css';
 
 function California() {
     return (
-<div className="california" id="california">
-<p className="californiaHeader">
-California Cryptids</p>
-</div>
-    )
+        <div>
+            <h1>Welcome to California</h1>
+            <p>This is the California page content.</p>
+        </div>
+    );
 }
 
 export default California;
