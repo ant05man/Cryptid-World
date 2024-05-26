@@ -6,3 +6,23 @@ p {
 .californiaHeader {
     text-decoration: overline;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space between them */
+    align-items: center; /* Center items vertically */
+    background: linear-gradient(to right, forestgreen, white); /* Linear gradient */
+    padding: 15px; /* Padding inside the navbar */
+    border: 2px solid #333; /* Border around the navbar */
+    border-radius: 5px; /* Optional: rounded corners */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif; /* Font */
+}
+
+ .navbar a{
+color:black;
+}
+
+.navbar a:hover {
+    color:forestgreen;
+}
