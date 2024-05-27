@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import '../styles/new-jersey.css';
 
 const creatures = [
-    { name: 'Jersey Devil', imageUrl: `'/images/The-Jersey-Devil.png'`}
+    { name: 'Jersey Devil', imageUrl: '/The-Jersey-Devil.png'}
 ];
 
 function NewJersey() {
