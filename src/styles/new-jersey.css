@@ -9,7 +9,7 @@ p {
     justify-content: center; /* Distribute items with space between them */
     align-items: center; /* Center items vertically */
     background: linear-gradient(to right, forestgreen, white); /* Linear gradient */
-    padding: 15px; /* Padding inside the navbar */
+    padding: 5px; /* Padding inside the navbar */
     border: 2px solid #333; /* Border around the navbar */
     border-radius: 5px; /* Optional: rounded corners */
     color: white; /* Text color */
@@ -34,7 +34,7 @@ color:black;
 table {
 width: 100%;
 border-collapse: collapse;
-margin-top: 20px;
+margin-top: 50px;
 }
 
 th, td {
