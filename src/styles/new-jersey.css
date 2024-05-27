@@ -1,3 +1,32 @@
-.newJerseyHeader {
-    text-decoration: overline;
+p {
+    font-family:cursive;
+    text-align:center;
+}
+
+
+.njnavbar {
+    display: flex;
+    justify-content: center; /* Distribute items with space between them */
+    align-items: center; /* Center items vertically */
+    background: linear-gradient(to right, forestgreen, white); /* Linear gradient */
+    padding: 15px; /* Padding inside the navbar */
+    border: 2px solid #333; /* Border around the navbar */
+    border-radius: 5px; /* Optional: rounded corners */
+    color: white; /* Text color */
+    font-family: cursive; /* Font */
+}
+
+
+ .njnavbar a{
+color:black;
+}
+
+.njnavbar a:hover {
+    color:forestgreen;
+}
+
+.njnav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
 }

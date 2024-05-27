@@ -1,13 +1,17 @@
 // NewJersey.jsx
-// the style of this page is from hompage.jsx because that takes priority
-
+// the style of this page is from homepage.jsx because that takes priority
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/new-jersey.css';
 
 function NewJersey() {
     return (
         <div>
             <h1>Cryptids of New Jersey</h1>
-            <p>This is the New Jersey page content.</p>
+            <div class="njnavbar">
+                <Link className="njnav-link" to="/">Home</Link>
+</div>
+            <p></p>
         </div>
     );
 }
